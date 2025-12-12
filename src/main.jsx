@@ -38,8 +38,12 @@ import App from './App.jsx';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import ResponsiveDrawer from './pages/ResponsiveDrawer.jsx';
-// import theme from './theme.js';
+import CheckboxesGroup from './pages/Checkboxes.jsx'
+import BasicButtonGroup from './pages/BasicButtonGroup.jsx'
+import FormPropsTextFields from './pages/FormPropsTextFields.jsx'
+import ComboBox from './pages/ComboBox.jsx'
 
+// import theme from './theme.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -47,12 +51,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CssBaseline />    
 
     <h1>This is Demo React JS with MUI :-)</h1>
+
+  <br />
+
+  <h2>Vist path (home, about, responsivedrawer, checkboxes, basicbuttongroup, formpropstextfields, comboBox)</h2>
+
+
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/responsivedrawer" element={<ResponsiveDrawer />} />
-          <Route path="/checkboxes" element={<Checkboxes />} />
+          <Route path="/checkboxes" element={<CheckboxesGroup />} />
           <Route path="/basicbuttongroup" element={<BasicButtonGroup />} />
           <Route path="/formpropstextfields" element={<FormPropsTextFields />} />
           <Route path="/comboBox" element={<ComboBox />} />
