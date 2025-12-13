@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>    
       <Typography variant="h4">About Page</Typography>
-      <Button component={Link} to="/home" variant="outlined">
+      <Button component={Link} to="/" variant="outlined">
         Back Home
       </Button>
     </>

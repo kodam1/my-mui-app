@@ -42,6 +42,11 @@ import CheckboxesGroup from './pages/Checkboxes.jsx'
 import BasicButtonGroup from './pages/BasicButtonGroup.jsx'
 import FormPropsTextFields from './pages/FormPropsTextFields.jsx'
 import ComboBox from './pages/ComboBox.jsx'
+import ColumnGroupingTable from './pages/ColumnGroupingTable.jsx'
+import MuIcon from './pages/MuIcon.jsx'
+import DescriptionAlerts from './pages/DescriptionAlerts.jsx'
+
+
 
 // import theme from './theme.js';
 
@@ -50,28 +55,32 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />    
 
-    <h1>This is Demo React JS with MUI :-)</h1>
+    {/* <h1>This is Demo React JS with MUI :-)</h1> */}
 
   <br />
 
-  <h2>Vist path (home, about, responsivedrawer, checkboxes, basicbuttongroup, formpropstextfields, comboBox)</h2>
+  {/* <h2>Vist path (home, about, responsivedrawer, checkboxes, basicbuttongroup, formpropstextfields, comboBox)</h2> */}
 
 
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/responsivedrawer" element={<ResponsiveDrawer />} />
-          <Route path="/checkboxes" element={<CheckboxesGroup />} />
-          <Route path="/basicbuttongroup" element={<BasicButtonGroup />} />
-          <Route path="/formpropstextfields" element={<FormPropsTextFields />} />
-          <Route path="/comboBox" element={<ComboBox />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/home" element={<Home />} /> */}
+          <Route path="" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="responsivedrawer" element={<ResponsiveDrawer />} />
+          <Route path="checkboxes" element={<CheckboxesGroup />} />
+          <Route path="basicbuttongroup" element={<BasicButtonGroup />} />
+          <Route path="formpropstextfields" element={<FormPropsTextFields />} />
+          <Route path="comboBox" element={<ComboBox />} />
+          <Route path="columnGroupingTable" element={<ColumnGroupingTable />} />
+          <Route path="muIcon" element={<MuIcon />} />
+          <Route path="descriptionAlerts" element={<DescriptionAlerts />} />
+
+          
         </Routes>
       </BrowserRouter>
       {/* <App></App> */}
-    </ThemeProvider>
+    </ThemeProvider> 
   </React.StrictMode>
 );
 
